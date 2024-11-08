@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a2e;
+            padding: 15px 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: goldenrod;
+        }
+
+        nav ul li a.active {
+            background-color: #1a1a2e;
+            color: goldenrod;
+        }
+
+        .confirmation-section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px black;
+            text-align: center;
+        }
+
+        .confirmation-section h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .confirmation-section p {
+            color: green;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .booking-details {
+            text-align: left;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .booking-details h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .booking-details p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .home-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .home-btn:hover {
+            background-color: #FFD700;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="confirmation-section">
+        <h1>Thank You for Your Booking!</h1>
+        <p>Your payment was successful, and your booking is confirmed.</p>
+
+        <div class="booking-details">
+            <h2>Booking Details</h2>
+            <p><strong>Guest Name:</strong> Prashant Mishra</p>
+            <p><strong>Check-in Date:</strong> November 10, 2024</p>
+            <p><strong>Check-out Date:</strong> November 15, 2024</p>
+            <p><strong>Total Amount:</strong> $500.00</p>
+        </div>
+
+        <a href="index.html" class="home-btn">Return to Home</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Luxury Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
